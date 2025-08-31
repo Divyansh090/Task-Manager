@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Task Manager App
 
-## Getting Started
+**Task Manager** is a modern full-stack application built with Next.js, TypeScript, and Tailwind CSS. It allows users to sign up/login, manage tasks (add/edit/delete), toggle statuses between *pending/completed*, with backend integration and live deployment.
 
-First, run the development server:
+---
 
-```bash
+##  Live Demo & Resources
+
+- **Live App:** https://taskmanagerassignment.vercel.app
+- **GitHub Repo:** https://github.com/Divyansh090/Task-Manager
+- **Demo Video (2 mins):** https://drive.google.com/file/d/1wxI7sDKz1T43YX1vq_8F0q9ClwJ_L76C/view?usp=drive_link
+
+---
+
+##  Features
+
+- **Authentication:** User sign-up/login implemented using NextAuth 
+- **Task CRUD:** Create, read, update, and delete tasks  
+- **Status Toggle:** Switch tasks between *pending* and *completed*  
+- **Responsive UI:** Beautiful design using **Next.js**, **TypeScript**, and **Tailwind CSS**  
+- **Deployment:** Backend and frontend deployed on **Vercel** 
+
+
+---
+
+##  Tech Stack
+
+| Layer        | Technologies                                 |
+|--------------|----------------------------------------------|
+| Frontend     | Next.js (App Router), React, TypeScript, Tailwind CSS |
+| Backend      | Node.js / Next.js API routes,Next Auth, Prisma ORM |
+| Database     | PostgreSQL, Neon Console |
+| Deployment   | Frontend: Vercel; Backend: Same 
+
+---
+
+##  Quick Start
+
+1. **Clone the repository**
+   git clone https://github.com/Divyansh090/Task-Manager
+   cd task-manager
+
+Install dependencies
+npm install
+# or
+yarn install
+
+Configure environment variables
+Create a .env.local file:
+
+DATABASE_URL=your_database_url
+JWT_SECRET=your_jwt_secret
+NEXTAUTH_URL=http://localhost:3000
+
+Run the development server
+
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Navigate to http://localhost:3000 to view the app.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Project Structure
+. 
+├── prisma/ 
+├── public/             # Static files and assets
+├── src/
+│   ├── app/            # Next.js App Router (layouts, pages, components)
+│   ├── components/     # UI components
+│   ├── lib/            # Utilities (e.g., auth middlewares, API utils)
+├── .env          # Environment variables (not committed)
+├── next.config.js
+├── package.json
+└── README.md
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+How to Use
 
-## Learn More
+Sign Up / Login
+Create a new account or authenticate to access your tasks.
 
-To learn more about Next.js, take a look at the following resources:
+Add Tasks
+Click “Add Task,” provide a title (and optional description), and save.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit & Delete
+Modify existing tasks or remove them completely.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Toggle Status
+Click the status button to switch tasks between pending and completed.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank You!
+Thanks for reviewing my Task Manager App! I’d love to hear your feedback. Feel free to reach out if you'd like a walkthrough or further details.
+
+Contact
+Name: Divyansh Rathi
+Email: divyanshrathi90@gmail.com
+Portfolio: https://divyanshrathii.vercel.app
